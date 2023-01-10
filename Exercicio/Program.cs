@@ -27,7 +27,7 @@ namespace Exercicio
                     double width = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                     Console.Write("Height: ");
                     double height = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-                    list.Add(new Rectangle(color, width,height));
+                    list.Add(new Rectangle(color, width, height));
                 }
                 else
                 {
@@ -35,13 +35,12 @@ namespace Exercicio
                     double radius = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                     list.Add(new Circle(radius, color));
                 }
-                Console.WriteLine();
-                Console.WriteLine("SHAPE AREAS:");
-                foreach(Shape shape in list)
-                {
-                    Console.WriteLine(shape.Area().ToString("F2", CultureInfo.InvariantCulture));
-                }
-
+            }
+            Console.WriteLine();
+            Console.WriteLine("SHAPE AREAS:");
+            foreach (Shape shape in list)
+            {
+                Console.WriteLine(shape.Area().ToString("F2", CultureInfo.InvariantCulture));
             }
         }
     }
